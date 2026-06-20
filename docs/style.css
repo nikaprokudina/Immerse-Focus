@@ -1,0 +1,374 @@
+/* FocusFlow Website Styles */
+
+:root {
+    /* FocusFlow brand colors */
+    --purple-dark: #3A1A6E;
+    --purple-light: #B8A4D4;
+    --blush-1: #FFB4A2;
+    --blush-2: #F49EB5;
+    --blush-3: #B8A4D4;
+    --accent: #4A90D9;
+    --bg-light: #FAFAFA;
+    --text-primary: #3A1A6E;
+    --text-secondary: #666;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Nunito', 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: var(--text-primary);
+    background: #FFFFFF;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--accent);
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+}
+
+/* Main Content */
+main {
+    background: white;
+    margin: 40px auto;
+    padding: 60px 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+main.content {
+    max-width: 700px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--purple-dark);
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--purple-dark);
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--purple-dark);
+    margin-bottom: 10px;
+}
+
+p {
+    color: var(--text-secondary);
+    margin-bottom: 15px;
+}
+
+.last-updated {
+    color: var(--text-secondary);
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: var(--text-secondary);
+    margin-bottom: 40px;
+}
+
+/* Highlight Box */
+.highlight-box {
+    background: var(--accent);
+    color: white;
+    padding: 30px;
+    border-radius: 16px;
+    margin: 30px 0;
+}
+
+.highlight-box h3 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.highlight-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.highlight-box li {
+    padding-left: 25px;
+    margin-bottom: 10px;
+    position: relative;
+    color: white;
+}
+
+.highlight-box li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    color: white;
+}
+
+/* Lists */
+ul {
+    margin-left: 30px;
+    margin-bottom: 20px;
+    color: var(--text-secondary);
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Links */
+a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+/* Contact Box */
+.contact-box {
+    background: #F5F5F7;
+    padding: 30px;
+    border-radius: 16px;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.contact-box p {
+    color: var(--text-primary);
+    margin-bottom: 10px;
+}
+
+.contact-box a {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Support Card */
+.support-card {
+    background: var(--accent);
+    color: white;
+    padding: 40px;
+    border-radius: 16px;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.support-card .icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.support-card h2 {
+    color: white;
+    margin-top: 0;
+}
+
+.support-card p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.button {
+    display: inline-block;
+    background: white;
+    color: var(--accent);
+    padding: 15px 30px;
+    border-radius: 12px;
+    font-weight: 700;
+    margin-top: 20px;
+    transition: transform 0.2s;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    opacity: 1;
+}
+
+/* FAQ Items */
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 20px;
+    background: #F5F5F7;
+    border-radius: 12px;
+    transition: background 0.3s;
+}
+
+.faq-question:hover {
+    background: #EBEBED;
+}
+
+.faq-question h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.faq-arrow {
+    font-size: 24px;
+    color: var(--text-secondary);
+    transition: transform 0.3s;
+}
+
+.faq-item.active .faq-arrow {
+    transform: rotate(90deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    padding: 0 20px;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 500px;
+    padding: 20px;
+}
+
+.faq-answer p {
+    margin: 0;
+    color: var(--text-secondary);
+}
+
+.faq-answer ul {
+    margin-top: 10px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.hero h1 {
+    font-size: 56px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    color: var(--text-secondary);
+}
+
+/* Footer */
+footer {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    color: var(--text-secondary);
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    font-size: 14px;
+}
+
+.footer-links a {
+    color: var(--text-primary);
+    margin: 0 5px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 20px;
+    }
+
+    main {
+        padding: 40px 20px;
+        margin: 20px auto;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+}

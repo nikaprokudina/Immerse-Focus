@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - FocusFlow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">FocusFlow</div>
+            <nav>
+                <a href="support.html" class="active">Support</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container content">
+        <h1>How can we help?</h1>
+        <p class="subtitle">Get in touch or find answers below.</p>
+
+        <div class="support-card">
+            <div class="icon">✉️</div>
+            <h2>Email Support</h2>
+            <p>Have a question, found a bug, or want to suggest a feature? We read every message and usually reply within 24 hours.</p>
+            <a href="mailto:freesailinc@gmail.com" class="button">freesailinc@gmail.com</a>
+        </div>
+
+        <h2>FAQ</h2>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>How does the Pomodoro Technique work?</h3>
+                <span class="faq-arrow">›</span>
+            </div>
+            <div class="faq-answer">
+                <p>The Pomodoro Technique is a time management method that uses a timer to break work into intervals (typically 25 minutes) separated by short breaks. FocusFlow helps you customize these intervals to match your workflow.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>What is the difference between Short Break and Long Break?</h3>
+                <span class="faq-arrow">›</span>
+            </div>
+            <div class="faq-answer">
+                <p>Short Breaks are quick 5-minute rests between focus sessions. Long Breaks are longer 15-minute breaks that occur after a set number of focus sessions (configurable in Settings → Focus Behavior → Long Break After).</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>How do I customize timer durations?</h3>
+                <span class="faq-arrow">›</span>
+            </div>
+            <div class="faq-answer">
+                <p>Open Settings → Focus Behavior. You can customize Focus Mode duration, Short Break, Long Break, and set Duration Step to control time increments (1 min or 5 min intervals).</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>What does "Keep Screen Awake" do?</h3>
+                <span class="faq-arrow">›</span>
+            </div>
+            <div class="faq-answer">
+                <p>When enabled, FocusFlow prevents your device from going to sleep during an active focus session. This keeps the timer visible on your screen.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>How do Activities work?</h3>
+                <span class="faq-arrow">›</span>
+            </div>
+            <div class="faq-answer">
+                <p>Activities let you categorize your focus sessions (e.g., "Coding", "Writing", "Study"). Create activities in Settings → Activities, then select one before starting a timer. Your statistics will track time spent on each activity.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>Where is my data stored?</h3>
+                <span class="faq-arrow">›</span>
+            </div>
+            <div class="faq-answer">
+                <p>All your focus sessions, statistics, and settings are stored locally on your device in FocusFlow's private storage. Your data never leaves your device and is not uploaded to any server. See our <a href="privacy.html">Privacy Policy</a> for more details.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>How do I change the app theme?</h3>
+                <span class="faq-arrow">›</span>
+            </div>
+            <div class="faq-answer">
+                <p>Open Settings → Appearance → Background. Choose from gradient themes like Blush, Sky, Peach, Matcha, Lavender, Milk, Twilight, or photo backgrounds like Sunset, Mountains, Forest, and Aurora.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>What are the different timer display styles?</h3>
+                <span class="faq-arrow">›</span>
+            </div>
+            <div class="faq-answer">
+                <p>FocusFlow offers 5 timer styles in Settings → Appearance → Timer Display:</p>
+                <ul>
+                    <li><strong>Lap</strong> - Inner circle with gradient progress</li>
+                    <li><strong>Pie</strong> - Wedge-style countdown</li>
+                    <li><strong>Ring</strong> - Classic circular ring</li>
+                    <li><strong>Digits</strong> - Large digital countdown</li>
+                    <li><strong>Bubble</strong> - Floating bubble design</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>How do I enable notifications?</h3>
+                <span class="faq-arrow">›</span>
+            </div>
+            <div class="faq-answer">
+                <p>Open Settings → General & Support → Notifications and toggle it on. If this is your first time, iOS will ask for permission. If you previously denied permission, the toggle will open iOS Settings where you can enable notifications for FocusFlow.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>FocusFlow is published by FREESAIL INC. © 2025 FREESAIL INC. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a> ·
+                <a href="terms.html">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ accordion functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                const isActive = faqItem.classList.contains('active');
+
+                // Close all other FAQ items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+
+                // Toggle current item
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
