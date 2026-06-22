@@ -1,6 +1,6 @@
-# FocusFlow Website
+# Immerse Flow Website
 
-This folder contains the FocusFlow website with Privacy Policy, Terms of Service, and Support pages.
+This folder contains the Immerse Flow website with Privacy Policy, Terms of Service, and Support pages.
 
 ## Files
 
@@ -8,14 +8,14 @@ This folder contains the FocusFlow website with Privacy Policy, Terms of Service
 - `privacy.html` - Privacy Policy
 - `terms.html` - Terms of Service
 - `support.html` - Support & FAQ
-- `style.css` - Styles (FocusFlow brand colors and design)
+- `style.css` - Styles (Immerse Flow brand colors and design)
 
 ## How to publish with GitHub Pages
 
 1. **Commit and push these files:**
    ```bash
    git add docs/
-   git commit -m "Add FocusFlow website (Privacy, Terms, Support)"
+   git commit -m "Add Immerse Flow website (Privacy, Terms, Support)"
    git push
    ```
 
@@ -53,7 +53,7 @@ This folder contains the FocusFlow website with Privacy Policy, Terms of Service
 ## Design
 
 The website uses:
-- FocusFlow brand colors (Blush gradient, Purple, Orange accent)
+- Immerse Flow brand colors (Blush gradient, Purple, Orange accent)
 - Nunito font (same as app)
 - Responsive design for mobile
 - Clean, modern layout similar to Crispshot example
