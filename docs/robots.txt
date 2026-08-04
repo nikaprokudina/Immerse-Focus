@@ -1,0 +1,7 @@
+User-agent: Googlebot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+Sitemap: https://nikaprokudina.github.io/Immerse-Flow/sitemap.xml
